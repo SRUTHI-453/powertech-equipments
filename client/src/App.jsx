@@ -150,7 +150,7 @@ export default function App() {
           </div>
         </div>
         <p className={styles.footerP}>No.1, 3rd Pillaiyar Koil Street, Ekkattuthangal, Chennai – 600032</p>
-        <p className={styles.footerP}>©2026 Powertech Equipments. Since 1999. hclFounded by Mr. B. Ravichandran.</p>
+        <p className={styles.footerP}>©2026 Powertech Equipments. Since 1999, Founded by Mr. B. Ravichandran.</p>
       </footer>
 
       {/* ── FLOATING WA ────────────────────────────────────────────────────── */}
