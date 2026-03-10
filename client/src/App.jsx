@@ -124,7 +124,7 @@ export default function App() {
               <div>
                 <strong className={styles.contactLabel}>Our Location</strong>
                 <span className={styles.contactVal}>
-                  No.1, 3rd Pillaiyar Koil Street,<br />
+                 No.6A/30A, Karpaga Vinayagar Koil Street, Opp. to Gangai Amman Koil,<br />
                   Ekkattuthangal, Chennai – 600032
                 </span>
               </div>
@@ -149,7 +149,7 @@ export default function App() {
             <div className={styles.footerLogoLine2}>EQUIPMENTS</div>
           </div>
         </div>
-        <p className={styles.footerP}>No.1, 3rd Pillaiyar Koil Street, Ekkattuthangal, Chennai – 600032</p>
+        <p className={styles.footerP}>No.6A/30A, Karpaga Vinayagar Koil Street, Opp. to Gangai Amman Koil, Ekkattuthangal, Chennai – 600032</p>
         <p className={styles.footerP}>©2026 Powertech Equipments. Since 1999, Founded by Mr. B. Ravichandran.</p>
       </footer>
 
