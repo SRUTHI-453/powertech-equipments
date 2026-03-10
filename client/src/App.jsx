@@ -31,16 +31,13 @@ export default function App() {
         <div className={styles.heroGlow} />
         <div className={styles.heroBg}>POWER</div>
         <div className={styles.heroContent}>
-          <div className={styles.badge}>⚡ Established 1999 · Chennai's Power Backup Experts</div>
+          <div className={styles.badge}>⚡ Established 1999 · Tamil Nadu's Power Backup Experts</div>
           <h1 className={styles.h1}>
             <em className={styles.em}>Powertech</em> Equipments
           </h1>
           <p className={styles.heroP}>
-            Founded in 1999 by{" "}
-            <strong className={styles.highlight}>Mr. B. Ravichandran</strong>,
-            Powertech Equipments specialises in manufacturing, sales, and expert
-            servicing of UPS systems, inverters, and stabilizers for homes and
-            businesses. Reliable power — always.
+            Reliable Power Backup Solutions <br />
+            UPS • Inverters • Stabilizers for Every Need
           </p>
           <div className={styles.heroBtns}>
             <a href={WA_DEFAULT} className={styles.btnPrimary} target="_blank" rel="noreferrer">
@@ -153,7 +150,7 @@ export default function App() {
           </div>
         </div>
         <p className={styles.footerP}>No.1, 3rd Pillaiyar Koil Street, Ekkattuthangal, Chennai – 600032</p>
-        <p className={styles.footerP}>© 1999–2025 Powertech Equipments. Founded by Mr. B. Ravichandran.</p>
+        <p className={styles.footerP}>©2026 Powertech Equipments. Since 1999. hclFounded by Mr. B. Ravichandran.</p>
       </footer>
 
       {/* ── FLOATING WA ────────────────────────────────────────────────────── */}
