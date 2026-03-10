@@ -1,0 +1,78 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 5%;
+  background: rgba(13, 13, 13, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #222;
+  transition: box-shadow 0.3s;
+}
+.nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.5); }
+
+.logoBtn {
+  display: flex; align-items: center; gap: 10px;
+  background: none; border: none; cursor: pointer;
+}
+.logoText { display: flex; flex-direction: column; line-height: 1.1; }
+.line1 { font-family: 'Bebas Neue', sans-serif; font-size: 1.35rem; letter-spacing: 3px; color: var(--yellow); }
+.line2 { font-family: 'Bebas Neue', sans-serif; font-size: 0.95rem; letter-spacing: 3px; color: var(--white); }
+
+.navRight { display: flex; align-items: center; gap: 12px; }
+.navLinks { display: flex; align-items: center; gap: 28px; }
+.navLink {
+  background: none; border: none; color: #aaa;
+  font-size: 0.85rem; font-weight: 500; cursor: pointer;
+  letter-spacing: 0.5px; padding: 0;
+  position: relative; transition: color 0.2s;
+}
+.navLink::after {
+  content: ''; position: absolute; bottom: -4px; left: 0;
+  width: 0; height: 2px; background: var(--yellow);
+  transition: width 0.25s ease;
+}
+.navLink:hover { color: var(--white); }
+.navLink:hover::after { width: 100%; }
+
+.navCta {
+  background: var(--yellow); color: var(--dark);
+  font-weight: 700; font-size: 0.82rem; padding: 10px 20px;
+  border-radius: 4px; letter-spacing: 0.5px; white-space: nowrap;
+  transition: opacity 0.2s;
+}
+.navCta:hover { opacity: 0.85; }
+
+.hamburger {
+  display: none; background: none; border: 1px solid #333;
+  color: var(--white); font-size: 1.2rem; padding: 6px 10px;
+  border-radius: 4px; cursor: pointer; transition: border-color 0.2s;
+}
+.hamburger:hover { border-color: var(--yellow); color: var(--yellow); }
+
+.mobileMenu {
+  position: fixed; top: 64px; left: 0; right: 0;
+  z-index: 99; background: rgba(13,13,13,0.98);
+  backdrop-filter: blur(12px); border-bottom: 1px solid #222;
+  display: flex; flex-direction: column; padding: 16px 5%; gap: 4px;
+}
+.mobileLink {
+  background: none; border: none; border-bottom: 1px solid #1a1a1a;
+  color: #aaa; font-size: 1rem; font-weight: 500; padding: 12px 0;
+  text-align: left; cursor: pointer; transition: color 0.2s;
+  display: block; width: 100%;
+}
+.mobileLink:last-child { border-bottom: none; }
+.mobileLink:hover { color: var(--yellow); }
+.waLink { color: var(--green) !important; font-weight: 700; }
+
+@media (max-width: 768px) {
+  .navLinks { display: none; }
+  .hamburger { display: block; }
+  .nav { padding: 12px 4%; }
+  .line1 { font-size: 1.05rem; }
+  .line2 { font-size: 0.75rem; }
+  .navCta { font-size: 0.72rem; padding: 8px 12px; }
+}
